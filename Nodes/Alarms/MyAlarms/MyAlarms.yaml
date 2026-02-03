@@ -1,0 +1,150 @@
+Name: MyAlarms
+Id: g=8776ce454609c97c9701b880044929b5
+Type: FolderType
+Children:
+- Name: TempAlarm
+  Id: g=5d2a5ef8cd79081bc5319911e165ec48
+  Type: MyCustomAlarm
+  Children:
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=742b01566247eda114bf2ffe1bcb73ab
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=55356411212b459bde93ac6a7acd7c36
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=81c13bf3e38a3537f83b5e3cc2263201
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Id: g=139dd4e569b666963900f0390db674dd
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=936908344aff8d9e77c5d26b0bc1e893
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: AlarmDetails
+    Id: g=db7ec1576033f7ef4deee6848d9f1a82
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":16,"TextId":"alarm1_details"}
+  - Name: AlarmImage
+    Id: g=f183c73b9410ae0e9a0f83b70ab268b6
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=16;%PROJECTDIR%/AlarmsImages/FTOptixLogo_cyan.svg"
+- Name: ValveAlarm
+  Id: g=1e51eb9c9a4f496819a02d195b8413ad
+  Type: MyCustomAlarm
+  Children:
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=9318c0039d1c867a29e84c181cf2c398
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d7bb2f21bf2337f98b7e95c8962d6827
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d317a26984b228f92869e6ab25a3cb48
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variable2"
+      Children:
+      - Name: Mode
+        Id: g=04a46f1bd9777446fcc1f460becab7d4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=fea6f67f6eaeec1b65c009c51e743e85
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: AlarmDetails
+    Id: g=7ddc266a7d5e7db9c32a2b242b9a2ae4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":16,"TextId":"alarm2_details"}
+  - Name: AlarmImage
+    Id: g=692159bdaefce9e95345d280c9fdf35e
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=16;%PROJECTDIR%/AlarmsImages/images.png"

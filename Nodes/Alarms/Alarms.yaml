@@ -1,0 +1,80 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: MyCustomAlarm
+  Id: g=0af343433f77c5c67240e9d08aa02c7a
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ee0db106ccb554d55e028e1b9ebfe5c5
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=46f7c8dd2da66270d01f1ce2aa12bb9c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=a997e5cfe67e887eeb39a69c9fb16337
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=6a283aab4196cc0716c48cc52a36f0d8
+  - Name: AlarmDetails
+    Id: g=ff18980cd3d946df85817e3d4c4d538e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+  - Name: AlarmImage
+    Id: g=eeb29201adb34dc19536d5e1e643bb48
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "0"
+  - Name: AutoAcknowledge
+    Id: g=d067c5f0edf3224c0ed9181cd1a6c480
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoConfirm
+    Id: g=a896c67b76aac5371a5474657cf37521
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+- File: MyAlarms/MyAlarms.yaml
